@@ -1,0 +1,8 @@
+// Vitest Snapshot v1
+
+exports[`district model > should match snapshot 1`] = `
+{
+  "id": "1",
+  "name": "Difstrifct 1",
+}
+`;

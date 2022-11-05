@@ -1,0 +1,30 @@
+{
+  "name": "template-mst-model-bun-vitest",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "bun build src/index.ts > dist/index.js",
+    "watch": " nodemon --exec 'yarn build&&tsc && vitest run' ./src -e ts,json",
+    "test:gui": "vitest --ui",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "Franz Sittampalam",
+  "license": "ISC",
+  "devDependencies": {
+    "bun-types": "^0.2.0",
+    "mobx": "^6.6.2",
+    "mobx-state-tree": "^5.1.6",
+    "nanoid": "^4.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^18.11.9",
+    "@vitest/coverage-c8": "^0.24.5",
+    "@vitest/ui": "^0.24.5",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.8.4",
+    "vitest": "^0.24.5"
+  }
+}
